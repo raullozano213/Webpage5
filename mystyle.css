@@ -1,0 +1,106 @@
+body {display: flex;
+  justify-content: center;
+  background: repeating-linear-gradient(
+    45deg,
+    #add8e6,
+    #add8e6 10px,
+    #0073cf 10px,
+    #0073cf 20px
+  );
+}
+#change{
+  position: absolute;
+  width: 350px;
+  height:200px;
+}
+#change:hover
+{
+        background:repeating-linear-gradient(
+        45deg,
+        #0773cf,
+        #0773cf 10px,
+        #add8e6 10px,
+        #add8e6 20px
+  );
+}
+#container {
+  position: relative;
+  margin: 0 auto;
+  top: 150px;
+  height: 300px;
+  width: 300px;
+  background: white;
+}
+
+#smiles {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  width: 200px;
+  height: 200px;
+  background: #c58c85;
+  animation-play-state: paused;
+}
+
+#eyes::before,
+#eyes::after
+{
+  content: "";
+  position: absolute;
+  top: 33%;
+  width: 20px;
+  height: 20px;
+  background: black;
+
+}
+#eyes:before
+{
+  left: 25%
+}
+#eyes:after
+{
+  right: 25%
+}
+
+#simles:hover
+{
+  width: 30px;
+  height: 45px;
+}
+#smile
+{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border:10px solid transparent;
+  border-bottom:10px solid black;
+  transition: .5s;
+
+}
+#smiles:hover #smile
+{
+  width: 200px;
+  border-radius: 50%;
+}
+#color
+{
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  bottom: 100px;
+  border-radius: 50%;
+}
+#color:hover
+{
+        background:#C0C0C0;
+}
+#hair {
+  top: 40px;
+  left: 500px;
+  width: 200px;
+  height: 40px;
+  background-color: black;
+}
